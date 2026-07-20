@@ -1,0 +1,45 @@
+.recent{
+
+    width:min(1100px,92%);
+
+    margin:40px auto;
+
+}
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+}
+
+.section-title a{
+
+    color:#3B82F6;
+
+    text-decoration:none;
+
+}
+
+.note{
+
+    background:#1E293B;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+
+}
+
+.note:hover{
+
+    transform:translateY(-4px);
+
+}

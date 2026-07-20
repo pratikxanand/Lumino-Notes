@@ -1,0 +1,337 @@
+/* ===========================
+   DEFAULT THEME (Dark)
+=========================== */
+
+:root{
+
+    --bg:#0F172A;
+    --card:#1E293B;
+    --popup:#1E293B;
+
+    --text:#FFFFFF;
+    --text2:#CBD5E1;
+
+    --accent:#3B82F6;
+    --accent-hover:#2563EB;
+
+    --input:#334155;
+
+    --clock:#60A5FA;
+
+    --border:#334155;
+
+}
+
+.dark-theme{
+
+    --bg:#0F172A;
+    --card:#1E293B;
+    --popup:#1E293B;
+
+    --text:#FFFFFF;
+    --text2:#CBD5E1;
+
+    --accent:#3B82F6;
+    --accent-hover:#2563EB;
+
+    --input:#334155;
+
+    --clock:#000000;
+
+    --border:#334155;
+
+    --icon:#3b82f6;
+    --favcard:rgba(255,255,255,.8);
+    --favcard-text:#0c0c0e;
+    --digits:#fff;
+    --logo:white;
+    --header:#000;
+    --bottom-nav:rgba(5, 5, 5, 0.296);
+    --bottom-nav-btn:rgb(250, 246, 244);
+    --bottom-nav-btn-hover:rgb(19, 137, 255);
+
+
+    --search-box:rgba(255, 255, 255, 0.574);
+    --search-box-text:#000000;
+    --search-box-input:#070707;
+   
+
+    --popup:rgba(110, 133, 251, 0.474);
+    --cate:rgb(0, 58, 128);
+    --save-btn:rgb(43, 0, 172);
+
+
+
+}
+
+.light-theme{
+
+    --bg:#F8FAFC;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+    --favcard:#535050;
+    --favcard-text:white;
+    --text:#111827;
+    --text2:#475569;
+
+    --accent:#2563EB;
+    --accent-hover:#1D4ED8;
+    --icon:rgb(255, 219, 36);
+    --input:#E2E8F0;
+    --header:#0F172A;
+    --clock:#2563EB;
+    --digits:black;
+    --logo:white;
+    --border:#CBD5E1;
+    --bottom-nav:rgba(5, 5, 5, 0.296);
+    --bottom-nav-btn:rgb(250, 246, 244);
+    --bottom-nav-btn-hover:black;
+
+
+    --search-box:rgba(104, 104, 104, 0.574);
+    --search-box-text:#fffefe;
+    --search-box-input:#fffefe;
+   
+
+    --popup:rgba(245, 240, 242, 0.474);
+    --cate:rgb(4, 4, 4);
+    --save-btn:rgb(232, 223, 227);
+
+}
+
+.pink-theme{
+
+    --bg:#FFF1F2;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+
+    --text:#881337;
+    --text2:#BE185D;
+
+    --accent:#EC4899;
+    --accent-hover:#DB2777;
+
+    --input:#FBCFE8;
+
+    --clock:#EC4899;
+
+    --border:#F9A8D4;
+    --icon:#f63b3b;
+    --favcard:rgba(255,255,255,.8);
+    --favcard-text:#0c0c0e;
+    --digits:#f63b3b;
+    --logo:#f63b3b;
+    --header:#ffa5a5;
+    --bottom-nav:rgba(255, 96, 96, 0.296);
+    --bottom-nav-btn:#9f4646;
+    --bottom-nav-btn-hover:#f63b3b;
+
+    --search-box:rgba(238, 72, 72, 0.574);
+    --search-box-text:#000;
+    --search-box-input:#000;
+
+
+    --popup:rgba(251, 110, 162, 0.474);
+    --cate:rgb(128, 0, 70);
+    --save-btn:rgb(172, 0, 72);
+
+
+
+
+
+}
+
+.orange-theme{
+
+    --bg:#FFF7ED;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+
+    --text:#9A3412;
+    --text2:#C2410C;
+
+    --accent:#F97316;
+    --accent-hover:#EA580C;
+
+    --input:#FED7AA;
+
+    --clock:#F97316;
+
+    --border:#FDBA74;
+
+    --icon:#ff791a;
+    --favcard:rgba(255, 116, 51, 0.667);
+    --favcard-text:#0c0c0e;
+    --digits:#ff791a;
+    --logo:#c47413;
+    --header:#ffa973;
+    --bottom-nav:rgba(255, 72, 26, 0.296);
+    --bottom-nav-btn:#ff541f;
+    --bottom-nav-btn-hover:#e00000;
+
+    --search-box:rgba(238, 130, 72, 0.574);
+    --search-box-text:#000;
+    --search-box-input:#000;
+
+    --popup:rgba(251, 173, 110, 0.474);
+    --cate:rgb(128, 68, 0);
+    --save-btn:rgb(126, 58, 6);
+
+
+}
+
+.purple-theme{
+
+    --bg:#F5F3FF;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+
+    --text:#5B21B6;
+    --text2:#7C3AED;
+
+    --accent:#8B5CF6;
+    --accent-hover:#7C3AED;
+
+    --input:#DDD6FE;
+
+    --clock:#8B5CF6;
+
+    --border:#C4B5FD;
+
+
+    --icon:#c98aff;
+    --favcard:rgba(210, 119, 255, 0.667);
+    --favcard-text:#0c0c0e;
+    --digits:#7b56ff;
+    --logo:#cdd3fe;
+    --header:#543eb7;
+    --bottom-nav:rgba(26, 68, 255, 0.296);
+    --bottom-nav-btn:#311f75;
+    --bottom-nav-btn-hover:#3c00e0;
+
+    --search-box:rgba(125, 72, 238, 0.455);
+    --search-box-text:#000;
+    --search-box-input:#000;
+
+    --popup:rgba(110, 187, 251, 0.474);
+    --cate:rgb(0, 45, 128);
+    --save-btn:rgb(6, 50, 126);
+
+}
+.emerald-theme{
+
+    --bg:#ECFDF5;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+
+    --text:#065F46;
+    --text2:#047857;
+
+    --accent:#10B981;
+    --accent-hover:#059669;
+
+    --input:#A7F3D0;
+
+    --clock:#10B981;
+
+    --border:#6EE7B7;
+
+     --icon:#008a2e;
+    --favcard:rgba(62, 128, 91, 0.667);
+    --favcard-text:#0c0c0e;
+    --digits:#008113;
+    --logo:#00cf79;
+    --header:#046649;
+    --bottom-nav:rgba(0, 146, 73, 0.296);
+    --bottom-nav-btn:#028d2a;
+    --bottom-nav-btn-hover:#185f00;
+
+    --popup:rgba(207, 246, 168, 0.474);
+    --cate:green;
+    --save-btn:green;
+    --search-box:rgba(4, 125, 43, 0.455);
+    --search-box-text:#000;
+    --search-box-input:#000;
+
+}
+
+.crimson-theme{
+
+    --bg:#FEF2F2;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+
+    --text:#991B1B;
+    --text2:#B91C1C;
+
+    --accent:#DC2626;
+    --accent-hover:#B91C1C;
+
+    --input:#FECACA;
+
+    --clock:#DC2626;
+
+    --border:#FCA5A5;
+
+    --icon:#a40000;
+    --favcard:rgba(128, 62, 62, 0.667);
+    --favcard-text:#0c0c0e;
+    --digits:#ed3030;
+    --logo:#a40000;
+    --header:#e58282;
+    --bottom-nav:rgba(146, 0, 0, 0.296);
+    --bottom-nav-btn:#ff5c5c;
+    --bottom-nav-btn-hover:#c90000;
+
+
+     --search-box:rgba(255, 119, 119, 0.574);
+    --search-box-text:#fffefe;
+    --search-box-input:#fffefe;
+   
+
+    --popup:rgba(251, 110, 110, 0.474);
+    --cate:rgb(128, 9, 0);
+    --save-btn:rgb(172, 11, 0);
+
+}
+
+.ocean-theme{
+
+    --bg:#ECFEFF;
+    --card:#FFFFFF;
+    --popup:#FFFFFF;
+
+    --text:#155E75;
+    --text2:#0891B2;
+
+    --accent:#06B6D4;
+    --accent-hover:#0891B2;
+
+    --input:#CFFAFE;
+
+    --clock:#06B6D4;
+
+    --border:#67E8F9;
+
+     --icon:#155e75;
+    --favcard:#87eeec;
+    --favcard-text:#0c0c0e;
+    --digits:#155e75;
+    --logo:#155e75;
+    --header:#589999;
+    --bottom-nav:rgba(0, 146, 141, 0.296);
+    --bottom-nav-btn:#009e81;
+    --bottom-nav-btn-hover:#005b59;
+
+
+     --search-box:rgba(128, 208, 211, 0.574);
+    --search-box-text:#fffefe;
+    --search-box-input:#fffefe;
+   
+
+    --popup:rgba(135, 230, 234, 0.474);
+    --cate:rgb(0, 128, 117);
+    --save-btn:rgb(17, 121, 87);
+
+}
+

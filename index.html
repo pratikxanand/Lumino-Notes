@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/mainlogo.png">
+    <title>Lumino Notes</title>
+
+    <link rel="stylesheet" href="notes.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/dashboard.css">
+     <link rel="stylesheet" href="/css/timer.css">
+      <link rel="stylesheet" href="/css/tasks.css">
+    <link rel="stylesheet" href="/css/recent.css">
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="stylesheet" href="/css/viewallnotes.css">
+    <link rel="stylesheet" href="css/ui.css">
+   
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            <h2>Lumino Notes</h2>
+        </div>
+        <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        
+
+       
+    </header>
+
+   
+
+
+</div>
+         <section class="hero">
+     <h2 id="greeting"></h2>
+
+    <p id="day"></p>
+
+    <p id="date"></p>
+
+            <div class="clock">
+
+    <div class="digit" id="hour">08</div>
+
+    <div class="separator">:</div>
+
+    <div class="digit" id="minute">45</div>
+
+    <div class="separator">:</div>
+
+    <div class="digit" id="second">32</div>
+
+</div>
+    <p class="quote"></p>
+
+</section>
+   
+       <section class="dashboard">
+
+    <div class="top-cards">
+
+     <div class="weather card">
+
+    <i id="weatherIcon" class="fa-solid fa-cloud-sun"></i>
+
+    <div>
+
+        <h3 id="temp">--°C</h3>
+
+        <p id="city">Loading...</p>
+
+    </div>
+
+</div>
+        
+
+        <div class="streak card">
+
+            <i class="fa-solid fa-fire"></i>
+
+            <div>
+                <h3 class="streakCount">0</h3>
+                <p>Day Streak</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="quote-card">
+
+        <i class="fa-solid fa-quote-left"></i>
+
+        <p id="quote">
+            Stay focused and keep writing.
+        </p>
+
+    </div>
+
+    <div class="progress">
+
+        <div class="card">
+
+            <i class="fa-solid fa-note-sticky"></i>
+
+            <h2 id="notesCount">0</h2>
+
+            <p>Notes</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-list-check"></i>
+
+            <h2 id="tasksCount">0</h2>
+
+            <p>Tasks</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h2 id="focusTime">0h</h2>
+
+            <p>Focus</p>
+
+        </div>
+
+    </div>
+    </section>
+
+    
+<section class="stats">
+
+
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-star"></i>
+
+        <h2 id="favoriteCount">0</h2>
+
+        <p>Favorites</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-thumbtack"></i>
+
+        <h2 id="pinnedCount">0</h2>
+
+        <p>Pinned</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-book"></i>
+
+        <h2 id="studyCount">0</h2>
+
+        <p>Study Notes</p>
+
+    </div>
+
+</section>
+
+
+
+
+    <section class="favorites">
+
+    <div class="section-title">
+
+        <h2>⭐ Favorite Notes</h2>
+
+    </div>
+
+    <div id="favoriteNotes"></div>
+
+</section>
+    
+    <div class="filter-bar">
+
+    <button class="filter-btn active" data-filter="all">All</button>
+
+    <button class="filter-btn" data-filter="favorite">⭐ Favorites</button>
+
+    <button class="filter-btn" data-filter="pinned">📌 Pinned</button>
+
+    <button class="filter-btn" data-filter="Study">📚 Study</button>
+
+    <button class="filter-btn" data-filter="Work">💼 Work</button>
+
+    <button class="filter-btn" data-filter="Personal">🏠 Personal</button>
+
+    <button class="filter-btn" data-filter="Ideas">💡 Ideas</button>
+
+</div>
+
+    <section class="recent">
+
+    <div class="section-title">
+
+        <h2>Recent Notes</h2>
+
+       
+        <a href="notes.html">
+
+    View All
+
+</a>
+        
+
+    </div>
+
+    <div id="recentNotes">
+
+    </div>
+    
+
+    
+
+</section>
+
+    
+</section>
+
+<nav class="bottom-nav">
+
+
+<button id="addNoteBtn">
+
+<i class="fa-solid fa-circle-plus"></i>
+
+<span>Add</span>
+
+</button>
+
+<button onclick="window.location.href='task.html'">
+
+<i class="fa-solid fa-list-check"></i>
+
+<span>Tasks</span>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-clock"></i>
+
+<span>Focus</span>
+
+</button>
+
+<button id="settingsBtn">
+
+<i class="fa-solid fa-gear"></i>
+
+<span>Settings</span>
+
+</button>
+
+<button id="archivePopupBtn" >
+    <i class="fa-solid fa-box-archive"></i>
+    Archive
+</button>
+
+</nav>
+
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+
+        <label>Select Note Color</label>
+
+<div class="color-picker">
+
+    <div class="color yellow active" data-color="yellow"></div>
+
+    <div class="color blue" data-color="blue"></div>
+
+    <div class="color green" data-color="green"></div>
+
+    <div class="color red" data-color="red"></div>
+
+    <div class="color purple" data-color="purple"></div>
+
+</div>
+        <select id="category">
+
+    <option value="Study">📚 Study</option>
+
+    <option value="Work">💼 Work</option>
+
+    <option value="Personal">🏠 Personal</option>
+
+    <option value="Ideas">💡 Ideas</option>
+
+</select>
+        <input id="title" type="text" placeholder="Title">
+       
+
+        <textarea id="content" placeholder="Write your note..."></textarea>
+
+        
+
+        <button id="saveNote" type="button">
+            Save Note
+        </button>
+
+    </div>
+</div>
+
+<div id="recentNotes"></div>
+
+
+
+
+   <div class="settings-popup" id="settingsPopup">
+
+    <div class="settings-box">
+
+        <div class="settings-header">
+
+            <h2>⚙️ Settings</h2>
+
+            <button id="closeSettings">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="setting-item">
+
+            <label>Theme</label>
+
+
+    <div class="theme-grid">
+
+    <div class="theme-card active" data-theme="dark">
+        🌙
+        <span>Dark</span>
+    </div>
+
+    <div class="theme-card" data-theme="light">
+        ☀️
+        <span>Light</span>
+    </div>
+
+    <div class="theme-card" data-theme="pink">
+        💗
+        <span>Pink</span>
+    </div>
+
+    <div class="theme-card" data-theme="orange">
+        🧡
+        <span>Orange</span>
+    </div>
+
+    <div class="theme-card" data-theme="purple">
+        💜
+        <span>Purple</span>
+    </div>
+
+    <div class="theme-card" data-theme="emerald">
+        💚
+        <span>Emerald</span>
+    </div>
+
+    <div class="theme-card" data-theme="crimson">
+        ❤️
+        <span>Crimson</span>
+    </div>
+
+    <div class="theme-card" data-theme="ocean">
+        🌊
+        <span>Ocean</span>
+    </div>
+
+</div>
+
+        </div>
+
+        <button id="saveSettings">
+
+            Save Settings
+
+        </button>
+
+    </div>
+
+</div>
+<div id="archivePopup" class="popup">
+
+    <div class="popup-box archive-box">
+
+        <div class="archive-header">
+
+            <h2>📦 Archived Notes</h2>
+
+            <button id="closeArchive">
+                ✖
+            </button>
+
+        </div>
+
+        <div id="archiveNotes"></div>
+
+    </div>
+
+</div>
+   
+   
+<script src="js/recent-notes.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/greeting.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/editior.js"></script>
+<script src="js/setting.js"></script>
+</body>
+</html>

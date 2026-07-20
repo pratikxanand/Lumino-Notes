@@ -1,0 +1,46 @@
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color:var(--logo)
+}
+.logo i{
+    font-size: 28px;
+    color:var(--primary);
+}
+.logo h2{
+    font-size: 28px;
+}
+.bell{
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items:center;
+    background: var(--card);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bell i{
+    font-size: 20px;
+}
+.hero{
+    padding: 40px 25px;
+    text-align: center;
+}
+
+#greetings{
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+#day{
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+#date{
+
+    color: var(--gray);
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
