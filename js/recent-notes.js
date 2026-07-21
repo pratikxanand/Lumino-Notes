@@ -24,8 +24,11 @@ const colorButtons = document.querySelectorAll(".color");
 
 // ---------- VARIABLES ----------
 
-let notes = JSON.parse(localStorage.getItem("notes")) || [];
+const currentUser = localStorage.getItem("currentUser");
 
+let notes = JSON.parse(
+    localStorage.getItem(`notes_${currentUser}`)
+) || [];
 let editingIndex = null;
 let currentFilter = "all";
 let selectedColor = "yellow";
@@ -36,8 +39,10 @@ let selectedColor = "yellow";
 
 function saveToStorage(){
 
-    localStorage.setItem("notes", JSON.stringify(notes));
-
+    localStorage.setItem(
+    `notes_${currentUser}`,
+    JSON.stringify(notes)
+);
 }
 
 // ======================================
@@ -542,8 +547,10 @@ function addArchiveEvents(){
 
             notes[index].archived=true;
 
-            localStorage.setItem("notes",JSON.stringify(notes));
-
+           localStorage.setItem(
+    `notes_${currentUser}`,
+    JSON.stringify(notes)
+);
             console.log(notes);
 
             renderNotes(searchInput ? searchInput.value : "");
@@ -572,8 +579,10 @@ function addDeleteEvents(){
 
             notes.splice(index,1);
 
-            localStorage.setItem("notes",JSON.stringify(notes));
-
+           localStorage.setItem(
+    `notes_${currentUser}`,
+    JSON.stringify(notes)
+);
             renderNotes(searchInput ? searchInput.value : "");
 
             renderFavoriteNotes();
@@ -639,8 +648,10 @@ function addPinEvents(){
 
             notes[index].pinned=!notes[index].pinned;
 
-            localStorage.setItem("notes",JSON.stringify(notes));
-
+          localStorage.setItem(
+    `notes_${currentUser}`,
+    JSON.stringify(notes)
+);
             renderNotes(searchInput ? searchInput.value : "");
 
         };
@@ -665,8 +676,10 @@ function addFavoriteEvents(){
 
             notes[index].favorite=!notes[index].favorite;
 
-            localStorage.setItem("notes",JSON.stringify(notes));
-
+           localStorage.setItem(
+    `notes_${currentUser}`,
+    JSON.stringify(notes)
+);
             renderNotes(searchInput ? searchInput.value : "");
 
             renderFavoriteNotes();

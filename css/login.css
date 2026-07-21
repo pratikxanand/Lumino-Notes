@@ -1,0 +1,347 @@
+/* ===================================
+LOGIN POPUP
+=================================== */
+
+.login-popup{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(15,23,42,.45);
+    backdrop-filter:blur(8px);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    animation:fade .3s ease;
+
+}
+
+#openLogin{
+    background: transparent;
+    color: white;
+    border: none;
+   font-size: 28px;
+   transition: .4s;
+}
+#openLogin:hover{
+    color:#6366F1 ;
+    transform:scale(1.2);
+}
+
+/* ===================================
+LOGIN CARD
+=================================== */
+
+.login-card{
+
+    width:430px;
+    max-width:92%;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:28px;
+
+    padding:40px;
+
+    position:relative;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.2);
+
+    animation:popup .35s ease;
+
+}
+
+/* ===================================
+CLOSE BUTTON
+=================================== */
+
+.close-login{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f1f5f9;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-login:hover{
+
+    background:#6366F1;
+
+    color:#fff;
+
+}
+
+/* ===================================
+TOP
+=================================== */
+
+.login-top{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.login-logo{
+
+    width:80px;
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:42px;
+
+    background:linear-gradient(135deg,#6366F1,#8B5CF6);
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+    box-shadow:0 10px 30px rgba(99,102,241,.4);
+
+}
+
+.login-top h2{
+
+    font-size:32px;
+
+    color:#1e293b;
+
+    margin-bottom:8px;
+
+}
+
+.login-top p{
+
+    color:#64748b;
+
+}
+
+/* ===================================
+LABELS
+=================================== */
+
+.login-form label{
+
+    display:block;
+
+    margin-top:18px;
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ===================================
+INPUT BOX
+=================================== */
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    padding:0 15px;
+
+    border:2px solid transparent;
+
+    transition:.3s;
+
+}
+
+.input-box:focus-within{
+
+    border-color:#6366F1;
+
+    box-shadow:0 0 18px rgba(99,102,241,.25);
+
+}
+
+.input-box i{
+
+    color:#94a3b8;
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    padding:16px;
+
+    font-size:16px;
+
+}
+
+#togglePassword{
+
+    cursor:pointer;
+
+}
+
+/* ===================================
+OPTIONS
+=================================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:18px;
+
+    font-size:14px;
+
+}
+
+.login-options a{
+
+    text-decoration:none;
+
+    color:#6366F1;
+
+}
+
+/* ===================================
+BUTTON
+=================================== */
+
+.login-btn{
+
+    width:100%;
+
+    margin-top:28px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#6366F1,#8B5CF6);
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(99,102,241,.4);
+
+}
+
+/* ===================================
+FOOTER
+=================================== */
+
+.login-footer{
+
+    margin-top:28px;
+
+    text-align:center;
+
+}
+
+.login-footer a{
+
+    color:#6366F1;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+/* ===================================
+ANIMATIONS
+=================================== */
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}

@@ -23,8 +23,11 @@ const searchTask = document.getElementById("searchTask");
 
 // ---------- VARIABLES ----------
 
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+const currentUser = localStorage.getItem("currentUser");
 
+let tasks = JSON.parse(
+    localStorage.getItem(`tasks_${currentUser}`)
+) || [];
 let taskEditingIndex = null;
 
 // ======================================
@@ -33,8 +36,10 @@ let taskEditingIndex = null;
 
 function saveTasks(){
 
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-
+    localStorage.setItem(
+    `tasks_${currentUser}`,
+    JSON.stringify(tasks)
+);
 }
 
 // ======================================

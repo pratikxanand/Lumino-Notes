@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/notes.css">
     <link rel="stylesheet" href="css/viewallnotes.css">
     <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/login.css">
    
 </head>
 <body>
@@ -29,9 +30,12 @@
             <i class="fa-solid fa-book-open"></i>
             <h2>Lumino Notes</h2>
         </div>
-        <div class="bell">
-            <i class="fa-solid fa-bell"></i>
-        </div>
+      <button id="openLogin" class="login-open-btn">
+
+    <i class="fa-solid fa-user"></i>
+        
+
+</button>
         
 
        
@@ -43,10 +47,14 @@
 </div>
          <section class="hero">
      <h2 id="greeting"></h2>
+     <h2 id="welcomeUser">
+        
+    </h2>
 
     <p id="day"></p>
 
     <p id="date"></p>
+ 
 
             <div class="clock">
 
@@ -392,6 +400,11 @@
         <span>Ocean</span>
     </div>
 
+    <div id="logoutBtn" class="theme-card">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+    </div>
+
 </div>
 
         </div>
@@ -424,7 +437,190 @@
     </div>
 
 </div>
-   
+   <!-- ==========================
+LOGIN POPUP
+========================== -->
+
+<div class="login-popup" id="loginPopup">
+
+    <div class="login-card">
+
+        <button class="close-login" id="closeLogin">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="login-top">
+
+            <div class="login-logo">
+
+                🌙
+
+            </div>
+
+            <h2>Welcome Back</h2>
+
+            <p>Sign in to continue using Lumino</p>
+
+        </div>
+
+        <div class="login-form">
+
+            <label>Email</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email">
+
+            </div>
+
+            <label>Password</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password">
+
+                <i
+                    class="fa-solid fa-eye"
+                    id="togglePassword">
+                </i>
+
+            </div>
+
+            <div class="login-options">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="rememberMe">
+
+                    Remember Me
+
+                </label>
+
+                <a href="#">Forgot Password?</a>
+
+            </div>
+
+            <button id="loginNow" class="login-btn">
+
+                Login
+
+            </button>
+
+        </div>
+
+
+        <div class="login-footer">
+
+    <span>New to Lumino?</span>
+
+    <a href="#" id="registerBtn">
+        Create Account
+    </a>
+
+</div>
+       <!-- ==========================
+REGISTER POPUP
+========================== -->
+
+<div class="login-popup" id="registerPopup">
+
+    <div class="login-card">
+
+        <button class="close-login" id="closeRegister">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <div class="login-top">
+
+            <div class="login-logo">
+
+                🌙
+
+            </div>
+
+            <h2>Create Account</h2>
+
+            <p>Join Lumino and organize your life.</p>
+
+        </div>
+
+        <div class="login-form">
+
+            <label>Full Name</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Your Name">
+
+            </div>
+
+            <label>Email</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Email">
+
+            </div>
+
+            <label>Password</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Password">
+
+            </div>
+
+            <button
+                class="login-btn"
+                id="createAccount">
+
+                Create Account
+
+            </button>
+            <div class="login-footer">
+
+    Already have an account?
+
+    <a href="#" id="backToLogin">
+
+        Login
+
+    </a>
+
+</div>
+
+        </div>
+
+      
    
 <script src="js/recent-notes.js"></script>
 <script src="js/clock.js"></script>
@@ -435,5 +631,6 @@
 <script src="js/editior.js"></script>
 <script src="js/setting.js"></script>
 <script src="web.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
