@@ -368,7 +368,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if(welcome){
 
-        welcome.textContent = `Welcome, ${user.name} 👋`;
+        welcome.textContent = ` ${user.name}`;
 
     }
 

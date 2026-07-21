@@ -1,0 +1,452 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+    background:linear-gradient(135deg,#111827,#1e293b);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+    color:white;
+
+}
+
+
+
+.container{
+
+    width:100%;
+    max-width:900px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+/* COMMON CARD */
+
+.card,
+.timer-card{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.2);
+
+    animation:appear 0.7s ease;
+
+}
+
+
+
+@keyframes appear{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+h1,h2{
+
+    margin-bottom:25px;
+
+}
+
+
+
+h1 i,
+h2 i{
+
+    margin-right:10px;
+
+}
+
+
+
+
+
+/* TIMER */
+
+
+.timer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:30px 0;
+
+}
+
+
+
+.time-box{
+
+    width:90px;
+
+    height:90px;
+
+    background:#020617;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+
+    box-shadow:
+    inset 0 0 20px rgba(255,255,255,0.1);
+
+
+}
+
+
+
+.timer span{
+
+    font-size:40px;
+
+}
+
+
+
+
+
+/* BUTTONS */
+
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:12px 20px;
+
+    border-radius:15px;
+
+    color:white;
+
+    background:#2563eb;
+
+    transition:0.3s;
+
+    font-size:15px;
+
+}
+
+
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    background:#3b82f6;
+
+}
+
+
+
+button:active{
+
+    transform:scale(0.9);
+
+}
+
+
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+
+
+
+
+/* QUICK BUTTONS */
+
+
+.quick-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+
+
+.quick-buttons button{
+
+    background:#7c3aed;
+
+}
+
+
+
+
+
+/* INPUT */
+
+
+input,
+select{
+
+    width:100%;
+
+    margin:10px 0;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    border:none;
+
+    background:#020617;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+
+
+input:focus,
+select:focus{
+
+    outline:2px solid #2563eb;
+
+}
+
+
+
+
+
+.custom button{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* CUSTOM TIMER LIST */
+
+
+#customList div{
+
+    background:#020617;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+#customList div:hover{
+
+    transform:translateX(8px);
+
+}
+
+
+
+
+
+/* GOAL */
+
+
+#completeGoal{
+
+    width:100%;
+
+    margin-top:15px;
+
+    background:#16a34a;
+
+}
+
+
+
+#completeGoal:hover{
+
+    background:#22c55e;
+
+}
+
+
+
+
+
+/* STATS */
+
+
+.stats{
+
+    text-align:center;
+
+}
+
+
+
+#streak{
+
+    font-size:45px;
+
+    color:#facc15;
+
+}
+
+
+
+#usage{
+
+    font-size:35px;
+
+    color:#38bdf8;
+
+}
+
+
+
+
+
+/* FLIP ANIMATION */
+
+
+.flip{
+
+    animation:flip 0.5s ease;
+
+}
+
+
+
+@keyframes flip{
+
+    0%{
+
+        transform:rotateX(90deg);
+
+        opacity:0;
+
+    }
+
+
+    100%{
+
+        transform:rotateX(0);
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:500px){
+
+
+    .time-box{
+
+        width:65px;
+
+        height:65px;
+
+        font-size:28px;
+
+    }
+
+
+    .timer span{
+
+        font-size:28px;
+
+    }
+
+
+    button{
+
+        padding:10px;
+
+    }
+
+}

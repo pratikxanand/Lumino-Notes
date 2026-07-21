@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Focus Timer</title>
+
+    <link rel="stylesheet" href="css/watchtimer.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- TIMER SECTION -->
+
+    <section class="timer-card">
+
+        <h1>
+            <i class="fa-solid fa-clock"></i>
+            Focus Timer
+        </h1>
+
+
+        <div class="timer">
+
+            <div class="time-box" id="hour">
+                00
+            </div>
+
+            <span>:</span>
+
+            <div class="time-box" id="minute">
+                25
+            </div>
+
+            <span>:</span>
+
+            <div class="time-box" id="second">
+                00
+            </div>
+
+        </div>
+
+
+
+        <div class="buttons">
+
+            <button id="start">
+                <i class="fa-solid fa-play"></i>
+                Start
+            </button>
+
+
+            <button id="pause">
+                <i class="fa-solid fa-pause"></i>
+                Pause
+            </button>
+
+
+            <button id="reset">
+                <i class="fa-solid fa-rotate-right"></i>
+                Reset
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- QUICK TIMER -->
+
+    <section class="card">
+
+        <h2>
+            <i class="fa-solid fa-bolt"></i>
+            Quick Timer
+        </h2>
+
+
+        <div class="quick-buttons">
+
+            <button data-time="300">
+                5 Min
+            </button>
+
+
+            <button data-time="600">
+                10 Min
+            </button>
+
+
+            <button data-time="1500">
+                25 Min
+            </button>
+
+
+            <button data-time="3600">
+                1 Hour
+            </button>
+
+        </div>
+
+
+
+        <div class="custom">
+
+            <h3>Add Custom Time</h3>
+
+
+            <input 
+            type="number" 
+            id="customHour"
+            placeholder="Hour">
+
+
+            <input 
+            type="number"
+            id="customMinute"
+            placeholder="Minute">
+
+
+            <button id="addCustom">
+                Add
+            </button>
+
+        </div>
+
+
+        <div id="customList"></div>
+
+
+    </section>
+
+
+
+
+
+    <!-- GOAL SECTION -->
+
+    <section class="card">
+
+
+        <h2>
+            <i class="fa-solid fa-bullseye"></i>
+            Today's Goal
+        </h2>
+
+
+        <select id="goal">
+
+            <option value="3600">
+                Study 1 Hour
+            </option>
+
+
+            <option value="7200">
+                Study 2 Hours
+            </option>
+
+
+            <option value="1800">
+                Read 30 Minutes
+            </option>
+
+
+            <option value="5400">
+                Workout 90 Minutes
+            </option>
+
+        </select>
+
+
+
+        <button id="completeGoal">
+            Complete Goal
+        </button>
+
+
+    </section>
+
+
+
+
+
+    <!-- STATS -->
+
+
+   
+
+
+
+</div>
+
+
+
+<script src="js/watchtimer.js"></script>
+
+</body>
+
+</html>
