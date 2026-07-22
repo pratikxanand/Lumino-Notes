@@ -427,6 +427,8 @@ completeGoal.onclick=()=>{
 
     streak++;
 
+    
+
 
     localStorage.setItem(
         "streak",
